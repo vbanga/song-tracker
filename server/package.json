@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "./node_modules/nodemon/bin/nodemon.js src/app.js --exec 'npm run lint && node'",
+    "lint-start": "./node_modules/nodemon/bin/nodemon.js src/app.js --exec 'npm run lint && node'",
+    "start": "./node_modules/nodemon/bin/nodemon.js src/app.js",
     "lint": "./node_modules/eslint/bin/eslint.js **/*.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -13,8 +14,15 @@
   "license": "ISC",
   "dependencies": {
     "bunyan": "^1.8.12",
+    "cors": "^2.8.4",
     "eslint": "^4.11.0",
-    "nodemon": "^1.12.1"
+    "eslint-plugin-async-await": "0.0.0",
+    "express": "^4.16.2",
+    "joi": "^13.0.2",
+    "morgan": "^1.9.0",
+    "nodemon": "^1.12.1",
+    "sequelize": "^4.23.1",
+    "sqlite3": "^3.1.8"
   },
   "devDependencies": {
     "eslint-config-standard": "^10.2.1",
